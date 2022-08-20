@@ -1,0 +1,358 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Piscinas Ojeda</title>
+<meta name="keywords" content="Limpieza y mantenimiento de piscinas en Málaga, Churriana, Alhaurín, Torremolinos, Mijas, Fuengirola, Marbella, Vélez, Torre del Mar, Benajarafe, Coín, Pizarra, Cártama, Campanillas, Antequera, Casabermeja, Alfarnate, Villanueva.">
+<meta name="generator" content="muleroweb">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="fontawesome/font-awesome.min.css" rel="stylesheet">
+<link href="css/drinks.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.ui.effect.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/util.min.js"></script>
+<script src="js/collapse.min.js"></script>
+<script src="js/dropdown.min.js"></script>
+<script src="js/qwb9.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#intro']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_intro').offset().top-88 }, 600, 'easeOutExpo');
+   });
+   $("a[href*='#drinks']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#drinks').offset().top }, 600, 'easeOutExpo');
+   });
+   $("a[href*='#quotesLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_quotesLayoutGrid').offset().top-88 }, 600, 'easeOutExpo');
+   });
+   function quotesLayoutGridScroll()
+   {
+      var $obj = $("#wb_quotesLayoutGrid");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   quotesLayoutGridScroll();
+   $(window).scroll(function(event)
+   {
+      quotesLayoutGridScroll();
+   });
+   $("a[href*='#aboutLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_aboutLayoutGrid').offset().top }, 600, 'easeOutExpo');
+   });
+   $("a[href*='#bottlesLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_bottlesLayoutGrid').offset().top-88 }, 600, 'easeOutExpo');
+   });
+   function bottlesLayoutGridScroll()
+   {
+      var $obj = $("#wb_bottlesLayoutGrid");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   bottlesLayoutGridScroll();
+   $(window).scroll(function(event)
+   {
+      bottlesLayoutGridScroll();
+   });
+   $("a[href*='#prices']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_prices').offset().top }, 600, 'easeOutExpo');
+   });
+   $("a[href*='#contact']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_contact').offset().top }, 600, 'easeOutExpo');
+   });
+   $('#headerMenu .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
+   $(document).on('click','.headerMenu-navbar-collapse.show',function(e)
+   {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+      {
+         $(this).collapse('hide');
+      }
+   });
+   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+   if (iOS)
+   {
+      $('#wb_intro,#wb_quotesLayoutGrid,#wb_bottlesLayoutGrid,#wb_contact').css('background-attachment', 'scroll');
+   }
+});
+</script>
+</head>
+<body>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_headerImage" style="display:inline-block;width:293px;height:51px;z-index:0;">
+<img src="images/logo2.png" id="headerImage" alt="" width="293" height="52">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_headerMenu" style="display:inline-block;width:100%;z-index:1;">
+<div id="headerMenu" class="headerMenu" style="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button title="Hamburger Menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".headerMenu-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="headerMenu-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="nav-item">
+<a href="#intro" class="nav-link">inicio</a>
+</li>
+<li class="nav-item">
+<a href="#aboutLayoutGrid" class="nav-link">acerca de</a>
+</li>
+<li class="nav-item">
+<a href="#drinks" class="nav-link">trabajos</a>
+</li>
+<li class="nav-item">
+<a href="#prices" class="nav-link">áreas</a>
+</li>
+<li class="nav-item">
+<a href="#contact" class="nav-link">contacte</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_intro">
+<div id="intro">
+<div class="col-1">
+</div>
+</div>
+</div>
+<div id="wb_drinks">
+<div id="drinks">
+<div id="wb_drinksCard1" style="display:flex;text-align:right;z-index:2;" class="card">
+   <div id="drinksCard1-card-body">
+      <img id="drinksCard1-card-item0" src="images/drinks61.jpg" width="600" height="750" alt="" title="">
+      <div id="drinksCard1-card-item1">Servicios</div>
+      <hr id="drinksCard1-card-item2">
+      <div id="drinksCard1-card-item3">Limpieza completa y puesto a punto al inicio de temporada. Mantenimiento durante todo el año o verano. Distribución y aplicación de productos químicos. Montaje de cubiertas y depuradoras. Reparaciones, lecheo, etc.</div>
+   </div>
+</div>
+<div id="wb_drinksCard3" style="display:flex;text-align:right;z-index:3;" class="card">
+   <div id="drinksCard3-card-body">
+      <img id="drinksCard3-card-item0" src="images/drinks62.jpg" width="600" height="750" alt="" title="">
+      <div id="drinksCard3-card-item1">Nuestra manera de trabajar</div>
+      <hr id="drinksCard3-card-item2">
+      <div id="drinksCard3-card-item3">Trabajamos de manera independiente y personalizada para cada cliente, realizamos un servicio "a medida" para cada instalación basándonos en las necesidades específicas y estado actual de la misma.</div>
+   </div>
+</div>
+<div id="wb_drinksCard2" style="display:flex;text-align:right;z-index:4;" class="card">
+   <div id="drinksCard2-card-body">
+      <img id="drinksCard2-card-item0" src="images/drinks63.jpg" width="600" height="750" alt="" title="">
+      <div id="drinksCard2-card-item1">Productos</div>
+      <hr id="drinksCard2-card-item2">
+      <div id="drinksCard2-card-item3">Nos diferenciamos de otras empresas por la utilización de productos de primeras marcas.<br>Hace que la vida útil del agua de su pisina sea más duradera, reportando esto en un gran ahorro económico y una mayor calidad del agua.</div>
+   </div>
+</div>
+</div>
+</div>
+<div id="wb_quotesLayoutGrid">
+<div id="quotesLayoutGrid-divider-top">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 125" preserveAspectRatio="none">
+<path class="divider-fill" style="opacity:0.5" d="m 0,81.659348 c 81.99918,0 88.739113,19.697032 141.99858,19.697032 46.67953,0 33.12967,-19.551122 85.12915,-19.551122 57.49943,0 75.87924,34.141512 143.87856,34.141512 55.99944,0 98.99901,-36.475982 149.49851,-36.475982 76.49923,0 77.32923,29.482322 131.49868,43.284832 55.99944,14.2694 72.82927,-44.169982 142.82857,-44.169982 41.37959,0 74.35926,28.033012 103.68897,28.033012 C 942.67057,106.61865 1000,75.093678 1000,75.093678 V 24.999998 H 0 Z" />
+<path class="divider-fill" d="m 0,81.988666 c 97.331947,-14.74806 115.33231,19.667594 176.67353,19.667594 53.33107,0 60.14121,-51.965834 122.64246,-51.965834 84.00168,0 116.35232,90.668944 200.004,73.034484 80.0016,-16.85492 86.00172,-63.205964 153.34306,-63.205964 49.661,0 86.65174,33.00405 124.00248,33.00405 33.33067,0 51.27103,-31.16054 78.00156,-31.16054 43.93088,0 51.28103,31.0868 97.90196,28.83245 C 976.99954,89.015066 1000,74.267006 1000,74.267006 V 5.8499091e-6 H 0 Z" />
+</svg></div>
+<div id="quotesLayoutGrid-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 125" preserveAspectRatio="none">
+<path class="divider-fill" style="opacity:0.5" d="m 0,81.659348 c 81.99918,0 88.739113,19.697032 141.99858,19.697032 46.67953,0 33.12967,-19.551122 85.12915,-19.551122 57.49943,0 75.87924,34.141512 143.87856,34.141512 55.99944,0 98.99901,-36.475982 149.49851,-36.475982 76.49923,0 77.32923,29.482322 131.49868,43.284832 55.99944,14.2694 72.82927,-44.169982 142.82857,-44.169982 41.37959,0 74.35926,28.033012 103.68897,28.033012 C 942.67057,106.61865 1000,75.093678 1000,75.093678 V 24.999998 H 0 Z" />
+<path class="divider-fill" d="m 0,81.988666 c 97.331947,-14.74806 115.33231,19.667594 176.67353,19.667594 53.33107,0 60.14121,-51.965834 122.64246,-51.965834 84.00168,0 116.35232,90.668944 200.004,73.034484 80.0016,-16.85492 86.00172,-63.205964 153.34306,-63.205964 49.661,0 86.65174,33.00405 124.00248,33.00405 33.33067,0 51.27103,-31.16054 78.00156,-31.16054 43.93088,0 51.28103,31.0868 97.90196,28.83245 C 976.99954,89.015066 1000,74.267006 1000,74.267006 V 5.8499091e-6 H 0 Z" />
+</svg></div>
+<div id="quotesLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_aboutLayoutGrid">
+<div id="aboutLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_aboutHeading" style="display:inline-block;width:100%;text-align:center;z-index:5;">
+<h1 id="aboutHeading">FRANCISCO OJEDA</h1>
+</div>
+<div id="wb_aboutText">
+<div style="font-family:Arial;font-size:13px;color:#000000;">
+<div style="text-align:center"><span style="font-size:19px;color:#FFFFFF;"><strong>SU PISCINA ES UN LUGAR PARA DISFRUTAR</strong></span></div>
+<div style="text-align:center">&nbsp;</div>
+<div style="text-align:center"><span style="color:#FFFFFF;">P&iacute;danos presupuesto, un asesor cualificado de nuestra empresa</span></div>
+<div style="text-align:center"><span style="color:#FFFFFF;">visitar&aacute; sus instalaciones, revisando su estado y funcionamiento.</span></div>
+<div style="text-align:center">&nbsp;</div>
+<div style="text-align:center"><span style="color:#FFFFFF;">Le presentaremos un presupuesto completamente personalizado</span></div>
+<div style="text-align:center"><span style="color:#FFFFFF;">a las necesidades de la instalaci&oacute;n.</span></div>
+<div style="text-align:center">&nbsp;</div>
+<div style="text-align:center"><span style="color:#FFFFFF;">Estaremos a su disposici&oacute;n para resolver cualquier</span></div>
+<div style="text-align:center"><span style="color:#FFFFFF;">duda que pueda tener.</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_aboutImage" style="display:inline-block;width:100%;height:auto;z-index:7;">
+<img src="images/drinks7.jpg" id="aboutImage" alt="" width="455" height="398">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_bottlesLayoutGrid">
+<div id="bottlesLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_prices">
+<div id="prices">
+<div class="row">
+<div class="col-1">
+<div id="wb_pricesCard1" style="display:flex;width:100%;z-index:8;" class="card">
+   <div id="pricesCard1-card-body">
+      <div id="pricesCard1-card-item0">AREA DE TRABAJO<span class="badge" style="background-color:#263957;color:#FFFFFF">Málaga</span></div>
+      <div id="pricesCard1-card-item1">Nuestra área de trabajo se limita a la provincia de Málaga, contacte con nosotros para otras localidades.</div>
+   </div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_pricesCard2" style="display:flex;width:100%;z-index:9;" class="card">
+   <div id="pricesCard2-card-body">
+      <div id="pricesCard2-card-item0">MARCAS<span class="badge" style="background-color:#263957;color:#FFFFFF">Bayrol y Piscimar</span></div>
+      <div id="pricesCard2-card-item1">Trabajamos con las mejores marcas de tratamientos y limpieza del agua, con lo que nos aseguramos la máxima calidad.</div>
+   </div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_pricesCard3" style="display:flex;width:100%;z-index:10;" class="card">
+   <div id="pricesCard3-card-body">
+      <div id="pricesCard3-card-item0">PROTOCOLO<span class="badge" style="background-color:#263957;color:#FFFFFF">Covid-19</span></div>
+      <div id="pricesCard3-card-item1">Aplicamos el protocolo del Gobierno con los desinfectantes que se encuentran en el mercado y que han sido autorizados y registrados por el Ministerio de Sanidad.</div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:33;">
+<div id="wb_upIcon" style="position:absolute;left:9px;top:9px;width:24px;height:24px;text-align:center;z-index:11;">
+<a href="#intro"><div id="upIcon"><i class="fa fa-arrow-up"></i></div></a></div>
+</div>
+<div id="wb_contact">
+<div id="contact-overlay"></div>
+<div id="contact-divider-top">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 125" preserveAspectRatio="none">
+<path class="divider-fill" style="opacity:0.5" d="m 0,81.659348 c 81.99918,0 88.739113,19.697032 141.99858,19.697032 46.67953,0 33.12967,-19.551122 85.12915,-19.551122 57.49943,0 75.87924,34.141512 143.87856,34.141512 55.99944,0 98.99901,-36.475982 149.49851,-36.475982 76.49923,0 77.32923,29.482322 131.49868,43.284832 55.99944,14.2694 72.82927,-44.169982 142.82857,-44.169982 41.37959,0 74.35926,28.033012 103.68897,28.033012 C 942.67057,106.61865 1000,75.093678 1000,75.093678 V 24.999998 H 0 Z" />
+<path class="divider-fill" d="m 0,81.988666 c 97.331947,-14.74806 115.33231,19.667594 176.67353,19.667594 53.33107,0 60.14121,-51.965834 122.64246,-51.965834 84.00168,0 116.35232,90.668944 200.004,73.034484 80.0016,-16.85492 86.00172,-63.205964 153.34306,-63.205964 49.661,0 86.65174,33.00405 124.00248,33.00405 33.33067,0 51.27103,-31.16054 78.00156,-31.16054 43.93088,0 51.28103,31.0868 97.90196,28.83245 C 976.99954,89.015066 1000,74.267006 1000,74.267006 V 5.8499091e-6 H 0 Z" />
+</svg></div>
+<div id="contact-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 125" preserveAspectRatio="none">
+<path class="divider-fill" style="opacity:0.5" d="m 0,81.659348 c 81.99918,0 88.739113,19.697032 141.99858,19.697032 46.67953,0 33.12967,-19.551122 85.12915,-19.551122 57.49943,0 75.87924,34.141512 143.87856,34.141512 55.99944,0 98.99901,-36.475982 149.49851,-36.475982 76.49923,0 77.32923,29.482322 131.49868,43.284832 55.99944,14.2694 72.82927,-44.169982 142.82857,-44.169982 41.37959,0 74.35926,28.033012 103.68897,28.033012 C 942.67057,106.61865 1000,75.093678 1000,75.093678 V 24.999998 H 0 Z" />
+<path class="divider-fill" d="m 0,81.988666 c 97.331947,-14.74806 115.33231,19.667594 176.67353,19.667594 53.33107,0 60.14121,-51.965834 122.64246,-51.965834 84.00168,0 116.35232,90.668944 200.004,73.034484 80.0016,-16.85492 86.00172,-63.205964 153.34306,-63.205964 49.661,0 86.65174,33.00405 124.00248,33.00405 33.33067,0 51.27103,-31.16054 78.00156,-31.16054 43.93088,0 51.28103,31.0868 97.90196,28.83245 C 976.99954,89.015066 1000,74.267006 1000,74.267006 V 5.8499091e-6 H 0 Z" />
+</svg></div>
+<div id="contact">
+<div class="row">
+<div class="col-1">
+<label for="drinksCard2" id="contactLabel4" style="display:inline-block;width:275px;line-height:21px;z-index:12;">Contacto</label>
+<div id="wb_contactAddress">
+<div style="font-family:Arial;font-size:13px;color:#000000;">
+<div><span style="color:#FFFFFF;">Francisco Ojeda</span></div>
+<div>&nbsp;</div>
+<div><span style="color:#FFFFFF;">Tlf: 600 35 92 89</span></div>
+</div>
+</div>
+<label for="drinksCard2" id="contactLabel1" style="display:block;width:100%;line-height:21px;z-index:14;">Síganos proximamente en</label>
+<div id="wb_contactIcon1" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:15;">
+<a href="./index.html"><div id="contactIcon1"><i class="fa fa-rss"></i></div></a>
+</div>
+<div id="wb_contactIcon2" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:16;">
+<a href="./index.html"><div id="contactIcon2"><i class="fa fa-facebook"></i></div></a>
+</div>
+<div id="wb_contactIcon3" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:17;">
+<a href="./index.html"><div id="contactIcon3"><i class="fa fa-twitter"></i></div></a>
+</div>
+<div id="wb_contactIcon4" style="display:inline-block;width:25px;height:30px;text-align:center;z-index:18;">
+<a href="./index.html"><div id="contactIcon4"><i class="fa fa-youtube-play"></i></div></a>
+</div>
+</div>
+<div class="col-2">
+</div>
+<div class="col-3">
+<label for="drinksCard2" id="contactLabel3" style="display:inline-block;width:275px;line-height:21px;z-index:19;">Contactenos</label>
+<input type="text" id="contactName" style="display:block;width: 100%;height:38px;z-index:20;" name="name" value="" spellcheck="false" placeholder="Nombre">
+<input type="text" id="contactEmail" style="display:block;width: 100%;height:38px;z-index:21;" name="email" value="" spellcheck="false" placeholder="Email">
+<textarea name="message" id="contactMessage" style="display:block;width: 100%;;height:85px;z-index:22;" rows="2" cols="25" autocomplete="off" spellcheck="false" placeholder="Mensaje"></textarea>
+<input type="submit" id="contactButton" onclick="window.location.href='mailto:tucorreo@tudominio.com';return false;" name="" value="Enviar" style="display:block;width: 100%;;height:34px;z-index:23;">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footerLayoutGrid">
+<div id="footerLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_footerText1">
+<div style="font-family:Arial;font-size:13px;color:#000000;">
+<div style="text-align:right"><span style="font-size:19px;color:#FFFFFF;">Creado por</span></div>
+</div>
+</div>
+<div id="wb_footerText2">
+<div style="font-family:Arial;font-size:13px;color:#000000;">
+<div><span style="font-size:19px;color:#FFFFFF;">muleroweb</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
